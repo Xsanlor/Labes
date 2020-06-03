@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; Charset=UTF-8">
+<title>Калькулятор банковского вклада</title>
+</head>
+<body>
+<h3>Калькулятор банковского вклада:</h3>
+<form action="depozit.php" method="POST">
+<br>Сумма вклада: <input type="text" name="summ" >
+
+<br>Срок: <select id="selectvalue" name ="period">
+ <option selected="selected"><?=$_POST["period"]?></option>
+ <option value = "3">3 месяца</option>
+ <option value = "6">6 месяцев</option>
+ <option value = "9">9 месяцев</option>
+ <option value = "12">1 год</option>
+ <option value = "18">1,5 года</option>
+ <option value = "24">2 года</option>
+ <option value = "30">2,5 года</option>
+ <option value = "36">3 года</option>
+ <option value = "60">5 лет</option>
+ <option value = "120">10 лет</option>
+</select>
+
+<br>Возможность пополнения:<input name="replenishment" type="radio" value="yes" <? if ($_POST['replenishment'] == "yes"){echo "checked";} ?>>Да 
+ <input name="replenishment" type="radio" value="no" <? if ($_POST['replenishment'] == "no"){echo "checked";} ?>>Нет
+ 
+<br>Частичное снятие:<input name="withdrawal" type="radio" value="yes" <? if ($_POST['withdrawal'] == "yes"){echo "checked";} ?>>Да 
+ <input name="withdrawal" type="radio" value="no" <? if ($_POST['withdrawal'] == "no"){echo "checked";} ?>>Нет
+
+<br><input type="submit" value="Расчитать">
+</form>
