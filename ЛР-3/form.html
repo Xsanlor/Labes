@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.php">
+    <title>Form</title>
+</head>
+   <style>
+ body 
+ span{
+ 
+	font: 13pt Arial, Helvetica, sans-serif; /* Шрифт теста */
+    background: #e1dfb9; /* Цвет фона */
+	    }
+   h2 {
+    font-size: 18px; /* Размер шрифта в заголовке */
+    color: #080808; /* Цвет заголовка */
+    margin-top: 0; /* Отступ сверху */
+	text-shadow: 2px 2px 5px red;
+   }
+   .container {
+    width: 600px; /* Ширина слоя */
+    margin: 0 auto; /* Выравнивнить весь блок по центру */
+    background: #f0f0f0; /* Цвет фона левой колонки */
+   }
+   .header {
+    font-size: 38px; /* Размер текста в шапке */
+    text-align: center; /* Выравнивание текст шапки по центру */
+    padding: 5px; /* Отступы внутри блока шапки */
+    background: #8fa09b; /* Цвет фона шапки */
+    color: #fff; /* Цвет текста */
+   }
+   .sidebar {
+    margin-top: 10px;
+    width: 110px; /* Ширина блока */
+    padding: 0 10px; /* Отступы внутри левого блока */
+    float: left; /* Обтекание блока по правому краю */
+   }
+   .content {
+    margin-left: 130px; /* Отступ слева */
+    padding: 10px; /* Отступы внутри правого блока */
+    background: #fff; /* Цвет фона правого блока */
+   }
+   .footer {
+    background: #8fa09b; /* Цвет фона нижнего блока-подвала */
+    color: #fff; /* Цвет текста подвала */
+    padding: 5px; /* Отступы внутри блока */
+    clear: left; /* Отменяем действие float */
+   }
+  </style></head><!-- закрывающий тег области заголовка документи --> 
+
+ <form action="http://e-learn.meximas.com/tr.php" method="post">
+<ul class="form-style-1">
+    <li><label>Полное Имя <span class="required">*</span></label><input pattern="[A-Za-zА-Яа-яЁё]" title="Имя как в паспорте" type="text" name="field1" class="field-divided" placeholder="Имя" /> <input pattern="[A-Za-zА-Яа-яЁё]" title="Фамилия как в паспорте" type="text" name="field2" class="field-divided" placeholder="Фамилия" /></li>
+    <li>
+        <label>Пол</label>
+        <select name="field4" class="field-select">
+        <option value="Advertise">Мужской</option>
+        <option value="Partnership">Женский</option>
+        <option value="General Question">Секрет</option>
+        </select>
+    </li>
+    <li>
+        <label>Номер телефона <span class="required">*</span></label>
+        <input pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" type="tel" name="field3" class="field-long" placeholder="89991231313" />
+    </li>
+    <li> 
+    <lable>Тип номера<span class="required">*</span></lable>
+    <select name="fiel4" class="field-select">
+        <option value="Vip">Vip-номер</option>
+        <option value="Extra">Extra-номер</option>
+    </select>
+    </li>
+    <li>
+        <lable>Email <span class="required">*</span> </lable>
+        <input  type="email" name="field3" class="field-long" placeholder="example@email.com">
+    </li>
+    <div class="calendar_form">
+    <li>
+        <p>Выберите дату прибытия:</p> <input type="date" name="calendar">
+        <p>Выберите дату отъезда:</p> <input type="date" name="calendar">
+    </li>
+    </div>
+    <li>
+        <label>СНИЛС <span class="required">*</span></label>
+        <input pattern="[0-9]{3}[0-9]{3}[0-9]{4}" type="text" name="field3" class="field-long" placeholder="2223334444" />
+    </li>
+    <li>
+        <label>Кол-во людей <span class="required">*</span></label>
+        <input pattern="[1-7]{1}" type="text" name="field3" class="field-long" placeholder="1-7" />
+    </li>
+    <label>Предлагаемый номер <span class="required"></span></label>
+			   <script language="php">a = mt_radn(0-100);
+			echo ('a');</script>
+    <li>
+        <label>Сообщение <span class="required">*</span></label>
+        <textarea  name="field5" id="field5" class="field-long field-textarea"></textarea>
+    </li>
+    <li>
+        <input type="submit" value="Submit" />
+    </li>
+</ul>
+</form>
+        <div class="goback">
+         <a class="back" href="index.html"><input type="submit" value="На главную" /></a>
+        </div>
+</body>
+</html>

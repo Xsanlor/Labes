@@ -1,0 +1,79 @@
+<html> <!-- документ html --> 
+ <head> <!-- Указывает область head документа --> 
+  <title>Обратная связь <!-- открывающий тег заголовка странице в окне браузера--> 
+</title><!-- закрывающий тег заголовка --> 
+   <style>
+ body {
+    font: 13pt Arial, Helvetica, sans-serif; /* Шрифт теста */
+    background: #e1dfb9; /* Цвет фона */
+   }
+   h2 {
+    font-size: 18px; /* Размер шрифта в заголовке */
+    color: #080808; /* Цвет заголовка */
+    margin-top: 0; /* Отступ сверху */
+   }
+   .container {
+    width: 600px; /* Ширина слоя */
+    margin: 0 auto; /* Выравнивнить весь блок по центру */
+    background: #f0f0f0; /* Цвет фона левой колонки */
+   }
+   .header {
+    font-size: 38px; /* Размер текста в шапке */
+    text-align: center; /* Выравнивание текст шапки по центру */
+    padding: 5px; /* Отступы внутри блока шапки */
+    background: #8fa09b; /* Цвет фона шапки */
+    color: #fff; /* Цвет текста */
+   }
+   .sidebar {
+    margin-top: 10px;
+    width: 110px; /* Ширина блока */
+    padding: 0 10px; /* Отступы внутри левого блока */
+    float: left; /* Обтекание блока по правому краю */
+   }
+   .content {
+    margin-left: 130px; /* Отступ слева */
+    padding: 10px; /* Отступы внутри правого блока */
+    background: #fff; /* Цвет фона правого блока */
+   }
+   .footer {
+    background: #8fa09b; /* Цвет фона нижнего блока-подвала */
+    color: #fff; /* Цвет текста подвала */
+    padding: 5px; /* Отступы внутри блока */
+    clear: left; /* Отменяем действие float */
+   }
+   .blok-center {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 600px; /* Ширина блока */
+    height: 400px; /* Высота блока */
+    margin: auto; /* Отступ от блока */
+    top: 0; /* Положение блока от верхнего края */
+    bottom: 0; /* Положение блока от нижнего края */
+    left: 0; /* Положение блока от левого края */
+    right: 0; /* Положение блока от правого края */
+    background: #20B2AA; /* Цвет фона блока */
+    border: 1px solid #000; /* Рамка блока */
+    padding: 10px; /* Отступ внутри блока */
+    overflow: auto; /* Полоса прокрутки */
+   }
+  </style></head><!-- закрывающий тег области заголовка документи --> 
+<body><!-- Указывает область body документа --> 
+    <div class="container">
+   <div class="header">Антивирусные программы</div>
+   <div class="sidebar">
+    <p><a href="index.html">Главная</a></p>
+   </div>
+   <div class="content">
+<div class="blok-center">
+<form>
+<p>Ваше имя*<br />
+<input class="input" name="name" ENGINE="text" style="width:60%" /></p>
+<p>Электронная почта*<br />
+<input class="input" name="email" type="text" style="width:60%" /></p>
+<p>Тема сообщения<br />
+<input class="input" name="sub" type="text" style="width:60%" /></p>
+<p>Текст сообщения:<br /><textarea name="body" cols="1" rows="5" style="width:60%" /></textarea></p>
+<p><input id="submit" value="Отправить" type="submit" /></p>
+</form>
+</div>
+ </body><!-- закрывающий тег контента страницы --> 
+</html><!-- закрывающий тег документа страницы --> 
