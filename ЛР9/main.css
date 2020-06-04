@@ -4,6 +4,7 @@ body{background:#eee;margin:0;padding:0}
     position:relative;
     height:400px;
 	text-align: justify;
+	text-face: "Arial";
 	text-indent: 40px; 
 	color: #DAA520;
 }
@@ -18,6 +19,7 @@ body{background:#eee;margin:0;padding:0}
     margin: 0;
     padding: 0;
     text-align: justify;
+	text-face: "Arial";
     font-size: 18px;
 }
 .pagination li{
@@ -29,6 +31,7 @@ body{background:#eee;margin:0;padding:0}
     padding: 0 5px;
     border: 1px solid #9aafe5;
     text-decoration: none;
+	text-face: "Arial";
     color: #2e6ab1;
 }
 .pagination a:hover, .pagination a:active{
@@ -44,5 +47,6 @@ body{background:#eee;margin:0;padding:0}
     color: #4682B4;
     padding:5px;
     text-align: center;
+	text-face: "Arial";
     width: 20px;
 }
